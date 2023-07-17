@@ -1,3 +1,5 @@
+//In Java, a constructor is a block of codes similar to the method. It is called when an instance of the class is created.
+
 class circle {
     public int r;
 
