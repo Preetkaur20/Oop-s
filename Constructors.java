@@ -1,8 +1,8 @@
 //In Java, a constructor is a block of codes similar to the method. It is called when an instance of the class is created.
-There are two types of constructors in Java:
+//There are two types of constructors in Java:
 
-1. Default constructor (no-arg constructor)
-2. Parameterized constructor
+//1. Default constructor (no-arg constructor)
+//2. Parameterized constructor
 
 
 class circle {
