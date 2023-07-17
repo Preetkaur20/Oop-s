@@ -1,0 +1,61 @@
+// Polymorphism :  is a concept by which we can perform a single action in different ways.
+There are two types of polymorphism in Java: compile-time polymorphism and runtime polymorphism.
+
+1. Compile-time polymorphism also called as static polymorphism is done by Method Overloading - which says same class, same method with different parameters.
+class Animal {
+    public void eats() {
+        System.out.println("Eating");
+    }
+
+    public void eats(int a) {
+        System.out.println(a + " is Eating");
+    }
+
+    public void eats(int a, int b) {
+        System.out.println(a + " and " + b + " is Eating");
+    }
+}
+
+public class MethodOverloading {
+    public static void main(String[] args) {
+        Animal a = new Animal();
+        a.eats();
+        a.eats(1);
+        a.eats(2, 3);
+
+    }
+}
+
+2. Runtime Polymorphism - also called as Dynamic Dispatch and Method overriding is done (Different class & Same method the method of derived class is executed)
+class A {
+    int a;
+
+    public int meth1() {
+        return 10;
+    }
+
+    public void meth2() {
+        System.out.println("I am method 2 of class A");
+    }
+}
+
+class B extends A {
+    @Override
+    public void meth2() {
+        System.out.println("I am method 2 of class B");
+    }
+}
+
+public class methodOverriding {
+    public static void main(String[] args) {
+        // System.out.println("Hello !!");
+        A a = new A();
+        System.out.println(a.meth1());
+        a.meth2();
+        B b = new B();
+        b.meth2();
+    }
+}
+
+Dynamic Method Dispatch : suppose one derived class which inherits base class and creates object as 
+base obj1 = new derived() - Then all the method of base class is only called & if both classes has same method then derived class method is executed.(Overriding)
