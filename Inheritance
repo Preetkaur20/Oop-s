@@ -42,6 +42,7 @@ public class Inheritance {
     }
 }
 
+TYPES OF INHERITANCE 
 1. Single inheritance - When a class inherits another class, it is known as a single inheritance.
 2. Multilevel Inheritance - When there is a chain of inheritance, it is known as multilevel inheritance.
 3. Hierarchical inheritance - When two or more classes inherits a single class, it is known as hierarchical inheritance.
