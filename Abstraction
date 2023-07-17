@@ -1,0 +1,42 @@
+//Abstraction - Data abstraction is the process of hiding certain details and showing only essential information to the user.
+- Used To achieve security (hide certain details and only show the important details of an object).
+
+1. Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+2. Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided/defined by the subclass (inherited from).
+
+abstract class parent {
+    abstract public void greet();
+
+    public parent() {
+        System.out.println("I am constructor");
+    }
+
+    public void sayHello() {
+        System.out.println("Hello This is Preet :)");
+    }
+}
+
+class child extends parent {
+    @Override
+    public void greet() {
+        System.out.println("Good Morning");
+    }
+}
+
+class child1 extends parent {
+    @Override
+    public void greet() {
+        System.out.println("Good Afternoon");
+    }
+}
+
+public class abstractClass {
+    public static void main(String[] args) {
+        // Abstract class
+        // parent p = new parent(); -- throws error because obj of abstract class is not
+        // possible
+
+        child c = new child();
+        c.greet();
+    }
+}
