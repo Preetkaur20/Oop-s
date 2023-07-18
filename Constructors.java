@@ -1,4 +1,4 @@
-//In Java, a constructor is a block of codes similar to the method. It is called when an instance of the class is created.
+//In Java, a constructor is a block of codes similar to the method. It is called when an instance of the class is created. It is used to initialize the objects.
 //There are two types of constructors in Java:
 
 //1. Default constructor (no-arg constructor)
@@ -47,3 +47,6 @@ public class Prctice_52 {
 
     }
 }
+
+// Destructor : The destructor is the opposite of the constructor. The constructor is used to initialize objects while the destructor is used to delete or destroy the object that releases the resource occupied by the object.
+   //     It use Finalize() method.
